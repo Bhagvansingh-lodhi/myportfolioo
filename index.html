@@ -188,70 +188,52 @@
     </div>
   </section>
 
-  <section class="contact" id="contact">
-    <div class="content">
-      <div class="title"><span>Contact Me</span></div>
-      <div class="text">
-        <div class="topic">Have Any Project?</div>
-        <form action="https://formspree.io/f/mldjqdzn" method="POST">
-
-        <p>
-          <div class="contact_us_2">
-            <div class="responsive-container-block big-container">
-              <div class="blueBG">
-              </div>
-              <div class="responsive-container-block container">
-                <form class="form-box">
-                  <div class="container-block form-wrapper">
-                    <p class="text-blk contactus-head">
-                      Get in Touch
-                    </p>
-                    <p class="text-blk contactus-subhead">
-                    
-                    </p>
-                    <div class="responsive-container-block">
-                      <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
-                        <p class="text-blk input-title">
-                          FIRST NAME
-                        </p>
-                        <input class="input" id="ijowk" name="FirstName" placeholder="Please enter first name...">
-                      </div>
-                      <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                        <p class="text-blk input-title">
-                          LAST NAME
-                        </p>
-                        <input class="input" id="indfi" name="Last Name" placeholder="Please enter last name...">
-                      </div>
-                      <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                        <p class="text-blk input-title">
-                          EMAIL
-                        </p>
-                        <input class="input" id="ipmgh" name="Email" placeholder="Please enter email...">
-                      </div>
-                      <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                        <p class="text-blk input-title">
-                          PHONE NUMBER
-                        </p>
-                        <input class="input" id="imgis" name="PhoneNumber" placeholder="Please enter phone number...">
-                      </div>
-                      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i">
-                        <p class="text-blk input-title">
-                          WHAT DO YOU HAVE IN MIND
-                        </p>
-  <textarea id="message" name="message" rows="5" cols="30" placeholder="Type your message here..."></textarea>
-                      </div>
-                    </div>
-                    <button class="submit-btn">
-                      Submit
-                    </button>
-                    </form>
+ <section class="contact" id="contact">
+  <div class="content">
+    <div class="title"><span>Contact Me</span></div>
+    <div class="text">
+      <div class="topic">Have Any Project?</div>
+      <div class="contact_us_2">
+        <div class="responsive-container-block big-container">
+          <div class="blueBG"></div>
+          <div class="responsive-container-block container">
+            <!-- Only ONE form tag -->
+            <form action="https://formspree.io/f/mldjqdzn" method="POST" class="form-box">
+              <div class="container-block form-wrapper">
+                <p class="text-blk contactus-head">Get in Touch</p>
+                <p class="text-blk contactus-subhead"></p>
+                <div class="responsive-container-block">
+                  <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
+                    <p class="text-blk input-title">FIRST NAME</p>
+                    <input class="input" name="FirstName" placeholder="Please enter first name..." required>
                   </div>
-                  
-                </form>
+                  <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                    <p class="text-blk input-title">LAST NAME</p>
+                    <input class="input" name="LastName" placeholder="Please enter last name..." required>
+                  </div>
+                  <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                    <p class="text-blk input-title">EMAIL</p>
+                    <input class="input" name="Email" placeholder="Please enter email..." type="email" required>
+                  </div>
+                  <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                    <p class="text-blk input-title">PHONE NUMBER</p>
+                    <input class="input" name="PhoneNumber" placeholder="Please enter phone number..." type="tel">
+                  </div>
+                  <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i">
+                    <p class="text-blk input-title">WHAT DO YOU HAVE IN MIND</p>
+                    <textarea class="input" name="message" placeholder="Type your message here..." required></textarea>
+                  </div>
+                </div>
+                <button class="submit-btn" type="submit">Submit</button>
               </div>
-            </div>
+            </form>
           </div>
-  </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <footer>
     <div class="text">
