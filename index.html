@@ -3,256 +3,482 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Bhagvansingh lodhi </title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhagvansingh Lodhi | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="scroll-button">
-    <a href="#home"><i class="fas fa-arrow-up"></i></a>
-  </div>
-  <nav>
-    <div class="navbar">
-      <div class="logo"><a href="#">Portfolio.</a></div>
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#services">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <div class="cancel-btn">
-          <i class="fas fa-times"></i>
-        </div>
-      </ul>
-      <div class="media-icons">
-        <a href="https://github.com/Bhagvansingh-lodhi"><i class="fa-brands fa-github"></i></a>
-        <a href="https://leetcode.com/u/bhagvanlodhi9685/"><i class="fa-solid fa-laptop-code"></i></a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">Portfolio.</a>
       </div>
-    </div>
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-social">
+          <a href="https://github.com/Bhagvansingh-lodhi" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="https://leetcode.com/u/bhagvanlodhi9685/" class="social-link"><i class="fa-solid fa-laptop-code"></i></a>
+        </div>
+        <div class="nav-toggle">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </div>
+      </div>
     </div>
   </nav>
 
-  <section class="home" id="home">
-    <div class="home-content">
-      <div class="text">
-        <div class="text-one">Hello,</div>
-        <div class="text-two">I'm Bhagvan Singh Lodhi</div>
-        <div class="text-three">Software Engineer </div>
-      </div>
-      <div class="button">
-        <a href="mailto:bhagvansinghhere@gmail.com"> <button>Hire me</button></a>
-        
-        </a>
-      </button>
-      </div>
-    </div>
-  </section>
+  <!-- Scroll to top button -->
+  <div class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
 
-  <section class="about" id="about">
-    <div class="content">
-      <div class="title"><span>About Me</span></div>
-      <div class="about-details">
-        <div class="left">
-          <img src="pfp.jpg" alt="" />
-        </div>
-        <div class="right">
-          <div class="topic">"The best way to predict the future is to build it — one line of code at a time."
-
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-greeting">Hello, I'm</div>
+          <h1 class="hero-name">Bhagvan Singh Lodhi</h1>
+          <div class="hero-typing">
+            <span class="typed-text"></span>
+            <span class="cursor">&nbsp;</span>
           </div>
-          <p>
-            I’m a dedicated engineering student with a strong interest in web development and data structures & algorithms. I enjoy building dynamic web applications and solving complex problems through code. Constantly learning and growing, I aim to combine my technical skills with creativity to develop impactful solutions.
-
-
-          </p>
-          <div class="button">
-            <a href="mycv.pdf" download="My_Cv" class="download-btn">  
-            Download CV  </a>
+          <p class="hero-description">Crafting digital experiences through code and creativity</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="skills" id="skills">
-    <div class="content">
-      <div class="title"><span>My Skills</span></div>
-      <div class="skills-details">
-        <div class="text">
-          <div class="topic">Skills Reflects Our Knowledge</div>
-          <p>As a passionate web developer with a solid background in data structures and algorithms, I bring a balance of real-world development skills and core computer science knowledge. I build clean, efficient, and scalable web applications, while also applying algorithmic thinking to optimize performance and solve complex problems. This combination helps me deliver both high-quality code and smooth user experiences.</p>
-            <div class="Experience">
-              <div class="num"></div>
-              <div class="exp">
-                 <br />
+        <div class="hero-image">
+          <div class="image-container">
+            <img src="pfp.jpg" alt="Bhagvan Singh Lodhi" class="profile-img">
+            <div class="floating-elements">
+              <div class="floating-element element-1"><i class="fab fa-html5"></i></div>
+              <div class="floating-element element-2"><i class="fab fa-css3-alt"></i></div>
+              <div class="floating-element element-3"><i class="fab fa-js"></i></div>
+              <div class="floating-element element-4"><i class="fab fa-react"></i></div>
             </div>
           </div>
         </div>
-        <div class="boxes">
-          <div class="box">
-            <div class="topic">HTML</div>
-            <div class="per">90%</div>
-          </div>
-          <div class="box">
-            <div class="topic">CSS</div>
-            <div class="per">80%</div>
-          </div>
-          <div class="box">
-            <div class="topic">JavScript</div>
-            <div class="per">70%</div>
-          </div>
-          <div class="box">
-            <div class="topic">DSA</div>
-            <div class="per">40%</div>
-          </div>
-        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll down</span>
+        <i class="fas fa-arrow-down"></i>
       </div>
     </div>
   </section>
 
-  <section class="services" id="services">
-    <div class="content">
-      <div class="title"><span>My projects</span></div>
-      <div class="boxes">
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-calculator"></i>
-          </div>
-          <div class="topic">Calculator</div>
-          <p> This is a simple calculator made with HTML, CSS, and JavaScript. It can do basic operations like add, subtract, multiply, and divide. JavaScript handles the logic, while HTML and CSS create a clean, user-friendly layout.
-            <div class=""></div>
-            <a href="https://bhagvansingh-lodhi.github.io/calculator/" target="_blank">
-              <button class="btn1">Live Link </button>
-            </a>
-            
-
-
-
-
-          </p>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-play"></i>
-          </div>
-          <div class="topic">NETFLIX Clone</div>
-          <p>This is a Netflix clone built using HTML, CSS, and JavaScript. It features a clean homepage layout and responsive design.
-            <div class=""></div>
-            <a href=" https://bhagvansingh-lodhi.github.io/landingpage/" target="_blank">
-              <button class="btn1">Live Link </button>
-            </a>
-          
-          </p>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-calculator"></i>
-          </div>
-          <div class="topic">Age Calculator</div>
-          <p>This is a simple Age Calculator made with HTML, CSS, and JavaScript. Users can enter their date of birth, and the calculator displays their exact age in years, months, and days. It's a great project for practicing date manipulation and user input handling.
-<div class=""></div>
-
-            <a href=" https://bhagvansingh-lodhi.github.io/Agecalculator/" target="_blank">
-              <button class="btn1">Live Link </button>
-            </a>
-          
-          
-          </p>
-        </div>
-        <div class="box">
-          <div class="icon">
-                      <i class="fa-solid fa-cloud"></i>
-
-          </div>
-          <div class="topic">Weather App</div>
-          <p> Jalvaayu is a sleek and responsive weather app built with HTML, CSS, and JavaScript that provides real-time weather updates, forecasts, and location-based insights in a modern, user-friendly interface.
-</p>
-             <a href=" https://jalvaayu.netlify.app/" target="_blank">
-              <button class="btn1">Live Link </button>
-            </a>
-          
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-store"></i>
-          </div>
-          <div class="topic">Ecommerce</div>
-          <p>Shopixa is a modern React-based eCommerce platform designed for seamless shopping experiences. It features a sleek interface, fast performance, and essential eCommerce functionalities like product browsing, cart management, and secure checkout.</p>
-            <a href=" https://shopixa.vercel.app/" target="_blank">
-              <button class="btn1">Live Link </button>
-            </a>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-question"></i>
-          </div>
-          <div class="topic">Coming soon</div>
-          <p>
-          </p>
-        </div>
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-title">
+        <span>About Me</span>
       </div>
-    </div>
-  </section>
-
- <section class="contact" id="contact">
-  <div class="content">
-    <div class="title"><span>Contact me</span></div>
-    <div class="text">
-      <div class="topic">Have Any Project?</div>
-      <div class="contact_us_2">
-        <div class="responsive-container-block big-container">
-          <div class="blueBG"></div>
-          <div class="responsive-container-block container">
-            <!-- Only ONE form tag -->
-            <form action="https://formspree.io/f/mldjqdzn" method="POST" class="form-box">
-              <div class="container-block form-wrapper">
-                <p class="text-blk contactus-head">Get in Touch</p>
-                <p class="text-blk contactus-subhead"></p>
-                <div class="responsive-container-block">
-                  <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
-                    <p class="text-blk input-title">First Name</p>
-                    <input class="input" name="FirstName" placeholder="Please enter first name..." required>
-                  </div>
-                  <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                    <p class="text-blk input-title">Last Name</p>
-                    <input class="input" name="LastName" placeholder="Please enter last name..." required>
-                  </div>
-                  <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                    <p class="text-blk input-title">Email</p>
-                    <input class="input" name="Email" placeholder="Please enter email..." type="email" required>
-                  </div>
-                  <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                    <p class="text-blk input-title">Phone Number</p>
-                    <input class="input" name="PhoneNumber" placeholder="Please enter phone number..." type="tel">
-                  </div>
-                  <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i">
-                    <p class="text-blk input-title">What do you have in mind </p>
-                    <textarea class="input" name="message" placeholder="Type your message here..." required></textarea>
-                  </div>
-                </div>
-                <button class="submit-btn" type="submit">Submit</button>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="image-wrapper">
+            <img src="pfp.jpg" alt="Bhagvan Singh Lodhi" class="about-img">
+            <div class="about-overlay">
+              <div class="experience-badge">
+               
               </div>
-            </form>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="about-quote">"The best way to predict the future is to build it — one line of code at a time."</h2>
+          <p class="about-description">
+            I'm a dedicated engineering student with a strong interest in web development and data structures & algorithms. I enjoy building dynamic web applications and solving complex problems through code. Constantly learning and growing, I aim to combine my technical skills with creativity to develop impactful solutions.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <span class="detail-label">Name:</span>
+              <span class="detail-value">Bhagvan Singh Lodhi</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Email:</span>
+              <span class="detail-value">bhagvansinghhere@gmail.com</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">From:</span>
+              <span class="detail-value">India</span>
+            </div>
+          </div>
+          <a href="mycv.pdf" download="Bhagvan_Singh_CV" class="btn btn-download">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-title">
+        <span>My Skills</span>
+      </div>
+      <div class="skills-content">
+        <div class="skills-text">
+          <h3 class="skills-subtitle">Skills Reflect Our Knowledge</h3>
+          <p class="skills-description">
+            As a passionate web developer with a solid background in data structures and algorithms, I bring a balance of real-world development skills and core computer science knowledge. I build clean, efficient, and scalable web applications, while also applying algorithmic thinking to optimize performance and solve complex problems.
+          </p>
+          <div class="skills-stats">
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">250+</div>
+              <div class="stat-label">Coding Problems Solved</div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-progress">
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-name">HTML/CSS</span>
+              <span class="progress-percent">90%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-name">JavaScript</span>
+              <span class="progress-percent">80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-name">React</span>
+              <span class="progress-percent">75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="75"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-name">DSA</span>
+              <span class="progress-percent">60%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-width="60"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Projects Section -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-title">
+        <span>My Projects</span>
+      </div>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="other">Others</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-item" data-category="web">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://t3.ftcdn.net/jpg/11/69/85/26/360_F_1169852667_Q42tfOk7owVY9oOgaOwecnXKCcFIBJnp.jpg" alt="Calculator Project" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://bhagvansingh-lodhi.github.io/calculator/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Calculator App</h3>
+              <p class="project-description">
+                A responsive calculator with basic arithmetic operations, built with HTML, CSS, and JavaScript.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-item" data-category="web">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://cdn.logojoy.com/wp-content/uploads/20231031154602/2016-netflix-logo-600x319.png" alt="Netflix Clone" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://bhagvansingh-lodhi.github.io/landingpage/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Netflix Clone</h3>
+              <p class="project-description">
+                A responsive Netflix homepage clone with modern UI and smooth interactions.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-item" data-category="web">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://cdn-icons-png.freepik.com/256/6238/6238789.png?semt=ais_hybrid" alt="Age Calculator" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://bhagvansingh-lodhi.github.io/Agecalculator/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Age Calculator</h3>
+              <p class="project-description">
+                Calculate exact age in years, months, and days with a clean, user-friendly interface.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-item" data-category="web">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://cdn.pixabay.com/photo/2022/03/28/22/48/cloudy-7098481_640.png" alt="Weather App" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://jalvaayu.netlify.app/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Jalvaayu Weather App</h3>
+              <p class="project-description">
+                A sleek weather app providing real-time updates and forecasts with a modern interface.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-item" data-category="react">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://cdn-icons-png.freepik.com/256/6379/6379858.png?semt=ais_white_label" alt="Ecommerce App" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://shopixa.vercel.app/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Shopixa Ecommerce</h3>
+              <p class="project-description">
+                A modern React-based eCommerce platform with product browsing and cart management.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-item" data-category="other">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://t3.ftcdn.net/jpg/04/02/08/66/360_F_402086601_SBpH9ZUR7ZydTVJkI6V0MbZi1kZjYQHq.jpg" alt="Coming Soon" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">New Project Coming Soon</h3>
+              <p class="project-description">
+                Working on something exciting! Stay tuned for updates on my next project.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Coming Soon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <div class="text">
-      <span>Created By Bhagvan Lodhi</a> | &#169; 2025 All Rights Reserved</span>
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <span>Contact Me</span>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3 class="contact-subtitle">Let's Talk About Your Project</h3>
+          <p class="contact-description">
+            I'm currently available for freelance work and open to new opportunities. Feel free to reach out if you have a project in mind or just want to connect.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <p>bhagvansinghhere@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>India</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://github.com/Bhagvansingh-lodhi" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://leetcode.com/u/bhagvanlodhi9685/" class="social-link">
+              <i class="fa-solid fa-laptop-code"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mldjqdzn" method="POST" class="form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message" class="form-input form-textarea" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-form">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#home">Portfolio.</a>
+        </div>
+        <p class="footer-text">Crafting digital experiences with code and creativity</p>
+        <div class="footer-social">
+          <a href="https://github.com/Bhagvansingh-lodhi" class="footer-social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://leetcode.com/u/bhagvanlodhi9685/" class="footer-social-link">
+            <i class="fa-solid fa-laptop-code"></i>
+          </a>
+          <a href="#" class="footer-social-link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="footer-social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Bhagvan Singh Lodhi. All Rights Reserved.</p>
+      </div>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 
-
-
-
+</html>
